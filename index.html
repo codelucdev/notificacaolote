@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Gerar o PDF com os dados da notificação
         var conteudoPDF = `
         <img src="img/logoprefeitura.jpeg" alt="Logo Prefeitura" style="width: 80px; height: 80px; display: block; margin:0 auto; margin-top:40px;"><br><br>  
-            <h2 style="text-align: center; font-size:25px;">NOTIFICAÇÃO DE LOTE SUJO ${numeroLote}-2024</h2><br><br>
+            <h2 style="text-align: center; font-size:25px;">NOTIFICAÇÃO DE LOTE SUJO ${numeroLote}-2024</h2><br><br><br><br>
 
 
-            <p style="margin: 0 65px;">Considerando o teor da Lei Municipal n°2.126/19 (Código de Posturas), a Prefeitura Municipal de São João da Ponte MG NOTIFICA ${proprietario},
+            <p style="margin: 0 75px;">Considerando o teor da Lei Municipal n°2.126/19 (Código de Posturas), a Prefeitura Municipal de São João da Ponte MG NOTIFICA ${proprietario},
                 titular de um lote na ${endereco}, ${bairro}, nos seguintes termos:
             </p><br>
-            <p style="margin: 0 65px; font-style: italic;">
+            <p style="margin: 0 75px; font-style: italic;">
                 Art. 13. - Os terrenos situados na área urbana e de expansão urbana deste Município deverão ser mantidos limpos,
                  capinados e isentos de quaisquer materiais nocivos a saúde da vizinhança e da coletividade<br>
             
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 Art. 17 – É Proibido depositar ou descarregar qualquer espécie de lixo, folhagem de jardins ou resíduos industriais, em terrenos localizados
                  nos núcleos urbanos ou na área em expansão urbana, mesmo que os referidos terrenos não estejam devidamente fechados.<br>  
             </p><br>
-            <p style="margin: 0 65px;">
+            <p style="margin: 0 75px;">
                 Sendo assim, ${proprietario} fica <strong>CIENTE a efetuar a limpeza do lote acima citado no prazo máximo de ${prazoDias}
                  dias a contar do recebimento deste, caso não cumpra com a notificação, o imóvel esta passivo de MULTA.</strong><br>   
             
@@ -81,13 +81,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 Entretanto, fica o notificado ciente que caso reitere a infração verificada ou pratique outras condutas proibidas, poderá ser agravada a penalidade,
                  inclusive com a aplicação de multa e outras sanções descritas no artigo 180 da Lei Municipal n° 2.126/19.
             </p><br>
-            <p style="margin: 0 65px; font-size:14px;">São João da Ponte MG ${new Date().toLocaleDateString()}</p>
-            <p style="margin: 0 65px; font-size:14px;"<strong>Data de vencimento:</strong> ${new Date(new Date().getTime() + (prazoDias * 24 * 60 * 60 * 1000)).toLocaleDateString()}</p><br><br><br>
+            <p style="margin: 0 75px; font-size:14px;">São João da Ponte MG ${new Date().toLocaleDateString()}</p>
+            <p style="margin: 0 75px; font-size:14px;"<strong>Data de vencimento:</strong> ${new Date(new Date().getTime() + (prazoDias * 24 * 60 * 60 * 1000)).toLocaleDateString()}</p><br><br><br>
             <p style="text-align:center;">_________________________________</p><br>
             <p style="text-align:center;">Lucas Renan Santana Barbosa</p>
             <p style="text-align:center;">Fiscal de Posturas</p><br><br><br>
             <p style="text-align: justify; margin: 0 65px;">Assinatura__________________________________________________________________</p><br>
-            <p style="margin: 0 65px;">Data de recebimento:____/____/____ </p>
+            <p style="margin: 0 75px;">Data de recebimento:____/____/____ </p>
             
         `;
 
