@@ -24,9 +24,6 @@
         <label for="proprietario">NOME DO PROPRIETÁRIO:</label><br>
         <input type="text" id="proprietario" name="proprietario" required><br>
 
-        <label for="cpf_cnpj">CPF ou CNPJ do Proprietário:</label><br>
-        <input type="text" id="cpf_cnpj" name="cpf_cnpj" required><br>
-
         <label for="numero_dias">PRAZO (em dias):</label><br>
         <input type="number" id="numero_dias" name="numero_dias" required><br><br>
 
@@ -44,11 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var endereco = document.getElementById('endereco').value.toUpperCase();
         var bairro = document.getElementById('bairro').value.toUpperCase();
         var proprietario = document.getElementById('proprietario').value.toUpperCase();
-        var cpfCnpj = document.getElementById('cpf_cnpj').value.toUpperCase();
         var prazoDias = document.getElementById('numero_dias').value;
 
         // Verificar se todos os campos estão preenchidos
-        if (!numeroLote || !endereco || !bairro || !proprietario || !cpfCnpj || !prazoDias) {
+        if (!numeroLote || !endereco || !bairro || !proprietario || !prazoDias) {
             document.getElementById('error-message').textContent = 'Por favor, preencha todos os campos.';
             return;
         }
